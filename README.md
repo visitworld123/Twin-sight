@@ -14,7 +14,7 @@
 
 **Keywords**:  Fderated Learning, Label Deficiency, Gradient Conflict.
 
-**Abstract**:Federated semi-supervised learning (FSSL) has emerged as a powerful paradigm for collaboratively training machine learning models using distributed data with label deficiency. Advanced FSSL methods predominantly focus on training a single model on each client. However, this approach could lead to a discrepancy between the objective functions of labeled and unlabeled data, resulting in gradient conflicts. To alleviate gradient conflict, we propose a novel twin-model paradigm, called \textbf{Twin-sight}, designed to enhance mutual guidance by providing insights from different perspectives of labeled and unlabeled data. In particular, Twin-sight concurrently trains a supervised model with a supervised objective function while training an unsupervised model using an unsupervised objective function. To enhance the synergy between these two models, Twin-sight introduces a neighbourhood-preserving constraint, which encourages the preservation of the neighbourhood relationship among data features extracted by both models. Our comprehensive experiments on four benchmark datasets provide substantial evidence that Twin-sight can significantly outperform state-of-the-art methods across various experimental settings, demonstrating the efficacy of the proposed Twin-sight.
+**Abstract**:Federated semi-supervised learning (FSSL) has emerged as a powerful paradigm for collaboratively training machine learning models using distributed data with label deficiency. Advanced FSSL methods predominantly focus on training a single model on each client. However, this approach could lead to a discrepancy between the objective functions of labeled and unlabeled data, resulting in gradient conflicts. To alleviate gradient conflict, we propose a novel twin-model paradigm, called **Twin-sight**, designed to enhance mutual guidance by providing insights from different perspectives of labeled and unlabeled data. In particular, Twin-sight concurrently trains a supervised model with a supervised objective function while training an unsupervised model using an unsupervised objective function. To enhance the synergy between these two models, Twin-sight introduces a neighbourhood-preserving constraint, which encourages the preservation of the neighbourhood relationship among data features extracted by both models. Our comprehensive experiments on four benchmark datasets provide substantial evidence that Twin-sight can significantly outperform state-of-the-art methods across various experimental settings, demonstrating the efficacy of the proposed Twin-sight.
 
 ## The Table of Contents
 
@@ -63,7 +63,7 @@ python main.py
 
 In config.yaml, you can change the hyper-parameters and some settings. In our experiments, we use wandb as the default tool to record the running metrics like Acc and Loss. **Change recording tool:** If you want to use tensorboard to record, you can set `record_tool = 'tensorboard`.
 
-Please refer to the `./configs/default.py` file for the list of parameters. We list some main parameters and its meaning for  quick start. 
+Please refer to the `./configs/default.py` file for the list of hyper-parameters. We list some main parameters and its meaning for  quick start. 
 
 You can set these parameters by modify  `default.py` or a new `yaml` file and use it by `python main.py --config_file xxx.yaml` to indicate a certain config file.
 
@@ -77,9 +77,9 @@ You can set these parameters by modify  `default.py` or a new `yaml` file and us
 
 `--comm_round`: Global Communication round.
 
-`--SSFL_setting`: Which SSFL setting we standalone, you can choose 'partial_client' or 'partial_data'. Partial_client (PC) means partial clients have fully-labeled data, and other clients have fully-unlabeled data. It is also the focus of our discussion in this paper. Partial_data (PD) means every client has partially labeled data.
+`--SSFL_setting`: Which SSFL setting we standalone, you can choose `partial_client` or `partial_data`. Partial_client (PC) means partial clients have fully-labeled data, and other clients have fully-unlabeled data. It is also the focus of our discussion in this paper. Partial_data (PD) means every client has partially labeled data.
 
-`--SSL_method`: The pesudo-label strategy. We can choose 'fixmatch' or 'freematch'.
+`--SSL_method`: The pesudo-label strategy. We can choose `fixmatch` or `freematch`.
 
 `--model`: There are three different models we can choose which represents different self-supervised model including `SemiFed_SimCLR`, `SemiFed_SimSiam`, `SemiFed_BYOL`.
 

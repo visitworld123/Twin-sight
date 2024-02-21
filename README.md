@@ -22,8 +22,8 @@
 :wink: If Twin-sight is helpful to you, please star this repo. Thanks! :hugs: 
 - [The Table of Contents](#the-table-of-contents)
 - [:grimacing: Dependencies and installation](#grimacing-dependencies-and-installation)
-- [:partying\_face: How to run:](#partying_face-how-to-run)
-- [:evergreen\_tree: Detail of Twin-sight:](#evergreen_tree-detail-of-twin-sight)
+- [:partying\_face: How to run](#partying_face-how-to-run)
+- [:evergreen\_tree: Detail of Twin-sight](#evergreen_tree-detail-of-twin-sight)
 - [:rose: Experimental results](#rose-experimental-results)
 - [:smiley: Citation](#smiley-citation)
 - [:closed\_book: License](#closed_book-license)

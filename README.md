@@ -1,12 +1,13 @@
 <p align="center">
-    <img src="asset/Twin-sight.png" height=130, width=400>
+    <img src="asset/Twin-sight.png" height=180, width=600>
 </p>
 
 <p align="center">
-    <a href="https://iclr.cc/"><img src="https://img.shields.io/badge/Pub-ICLR'24-olive" alt="Pub"></a>
+    <a href="https://openreview.net/forum?id=qxLVaYbsSI"><img src="https://img.shields.io/badge/openreview-steelblue" alt="Openreview"></a>
+      <a href="https://iclr.cc/"><img src="https://img.shields.io/badge/Pub-ICLR'24-olive" alt="Pub"></a>
     <a href="https://github.com/visitworld123/Twin-sight"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
     <a href="https://github.com/visitworld123/Twin-sight/blob/main/LICENSE"><img src="https://img.shields.io/github/license/visitworld123/Twin-sight?color=yellow" alt="Lisence"></a>
-
+    <img src="https://badges.toozhao.com/badges/01HQ5WSG9E309HCWDA51W7GG6Z/blue.svg" />
 </p>
 <h1 align="center">Robust Training of Federated Models with <br/>Extremely Label Deficiency (ICLR 2024)</h1>
 
